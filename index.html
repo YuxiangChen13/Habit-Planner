@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Habit Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo">Habit <span>Planner</span></div>
+    <div class="today-label" id="today-label"></div>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-val" id="stat-today">0/0</div>
+      <div class="stat-lbl">Today</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val" id="stat-streak">0</div>
+      <div class="stat-lbl">Best streak</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val" id="stat-week">0%</div>
+      <div class="stat-lbl">This week</div>
+    </div>
+  </div>
+
+  <div class="add-row">
+    <input type="text" id="habit-input" placeholder="Add a new habit…" maxlength="40" />
+    <button class="btn-add" id="btn-add" aria-label="Add habit">+</button>
+  </div>
+
+  <div class="section-label" id="list-label"></div>
+  <div id="habit-list"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
